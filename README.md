@@ -27,15 +27,22 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
 <details open>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
-  ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  ### De eerste versie:
+  <img src="readme-images/sketch1.1.png" width="375px" alt="eerste versie">
+  <img src="readme-images/sketch1.png" width="375px" alt="eerste versie">
+  <img src="readme-images/sketch1.2.png" width="375px" alt="eerste versie/">
 
+  ### De tweede versie/schets:
+  Na het ontvangen van feedback tijdens les twee ben ik aan de slag gegaan met het verwerken van deze feedback. 
+  <img src="readme-images/sketch2.jpg" width="375px" alt="tweede versie">
+  <img src="readme-images/sketch2.2.jpg" width="375px" alt="tweede versie">
+  <img src="readme-images/sketch2.1.jpg" width="375px" alt="tweede versie">
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Ik wil graag beter worden in het gebruik van Grid / flexbox. 
+  - Ik zou graag mijn vaardigheden in het maken van vormen in css beter willen maken, zoals het maken van de tv en buttons. 
+  - ...
   - ...
  
 </details>
@@ -46,6 +53,8 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
 ## Voortgang/Feedback 1
 
 <details>
+  <img src="readme-images/feedback.png" width="375px" alt="Feedback">
+
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
