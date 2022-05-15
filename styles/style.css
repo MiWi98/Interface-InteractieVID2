@@ -16,21 +16,36 @@
        url('../fonts/pretendo-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
+@font-face {
+  font-family: 'mario_kart_f2regular';
+  src: url('../fonts/mario_kart_f2-webfont.woff2') format('woff2'),
+       url('../fonts/mario_kart_f2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ddtw00-condensedsemiboldRg';
+  src: url('../fonts/8915f60fd14a7688bcae6a457be3bd08-webfont.woff2') format('woff2'),
+       url('../fonts/8915f60fd14a7688bcae6a457be3bd08-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
 html, body {
-  height:100%;
+  height:0;
   margin:0;
 }
 
 body{
-  background: url("../../Interface-InteractieVID2/images/LoadingScreen.jpeg") no-repeat center center fixed;
+  background: url("../../Interface-InteractieVID2/images/LoadingScreen.png") no-repeat center center fixed;
   background-size: 100vw;
 }
 
@@ -47,9 +62,63 @@ h1, h2 {
 }
 
 /**************/
-/* DE TV */
+/* DE TV 1992 */
 /**************/
 article {
+  position: relative;
+  width:30em;
+  height:25em;
+  background-color:rgb(30 30 30);
+  border-radius: .5em;
+  box-shadow:
+    inset .15em .15em .15em rgb(100 100 100),
+    inset -.15em -.15em .2em rgb(100 100 100),
+    .1em .1em 1em rgb(0 0 0 / .5);
+}
+
+article p{
+  font-family: Helvetica;
+  font-size: 0.64em;
+  color: white;
+  transform: translateX(-50%); 
+  left: 50%;
+  position: absolute;
+  bottom: 3em;
+  font-weight: 800;
+}
+
+.AanUitKnop{
+  position: absolute;
+  right:1em;
+  bottom: 1em;
+  padding: .25em;
+  background-color: var(--rood-blok)ed;
+  border-style: none;
+  border-radius: 2em;
+}
+
+.scherm{
+  position: absolute;
+  top:1em;
+  right: 2.5em;
+  border-radius: .2em;
+  height: 20em;
+  width: 25em;
+  background-color:rgb(70 70 70);
+  box-shadow:
+    inset 0 -.1em .1em rgb(150 150 150),
+    inset 0 .1em .1em rgb(150 150 150);
+}
+
+
+
+
+
+/**************/
+/* DE TV 2000> */
+/**************/
+
+/* article {
   position: relative;
   width:45em;
   height:25em;
@@ -63,7 +132,57 @@ article {
 
 article p{
   font-size: .6em;
-  color: var(--tv-merk);
+  color: white;
+  transform: translateX(-50%); 
+  left: 50%;
+  position: absolute;
+  bottom: 0.5em;
+}
+
+.AanUitKnop{
+  position: absolute;
+  right:1em;
+  bottom: 1em;
+  padding: .25em;
+  background-color: red;
+  border-style: none;
+  border-radius: 2em;
+}
+
+.scherm{
+  position: absolute;
+  top:2.4em;
+  right: 3em;
+  border-radius: .2em;
+  height: 20em;
+  width: 39em;
+  background-color:rgb(102 115 128);
+  box-shadow:
+    inset 0 -.1em .1em rgb(150 150 150),
+    inset 0 .1em .1em rgb(150 150 150);
+} */
+
+
+
+
+/**************/
+/* DE TV 2010> */
+/**************/
+/* article {
+  position: relative;
+  width:45em;
+  height:25em;
+  background-color:rgb(30 30 30);
+  border-radius: .5em;
+  box-shadow:
+    inset .15em .15em .15em rgb(100 100 100),
+    inset -.15em -.15em .2em rgb(100 100 100),
+    .1em .1em 1em rgb(0 0 0 / .5);
+}
+
+article p{
+  font-size: .6em;
+  color: white;
   transform: translateX(-50%); 
   left: 50%;
   position: absolute;
@@ -75,7 +194,7 @@ article p{
   right:1em;
   bottom: 1em;
   padding: .25em;
-  background-color:var(--rood-blok);  
+  background-color: red;
   border-style: none;
   border-radius: 2em;
 }
@@ -91,19 +210,127 @@ article p{
   box-shadow:
     inset 0 -.1em .1em rgb(150 150 150),
     inset 0 .1em .1em rgb(150 150 150);
+} */
+
+
+
+
+/**************/
+/* DE TV 2017> */
+/**************/
+/* article {
+  position: relative;
+  width:45em;
+  height:25em;
+  background-color:rgb(30 30 30);
+  border-radius: .5em;
+  box-shadow:
+    inset .15em .15em .15em rgb(100 100 100),
+    inset -.15em -.15em .2em rgb(100 100 100),
+    .1em .1em 1em rgb(0 0 0 / .5);
 }
+
+.merk-naam-blokje{
+  background-color: rgb(30 30 30);
+  position: absolute;
+  height: 2em;
+  width: 4em;
+  top: 23.7em;
+  transform: translateX(-50%); 
+  left: 50%;
+  border-radius: 10% 10% 52% 48% / 0% 0% 20% 20% ;
+  box-shadow:
+    .1em .1em 1em rgb(0 0 0 / .5);
+}
+
+article p{
+  font-size: .6em;
+  color: white;
+  transform: translateX(-50%); 
+  left: 50%;
+  position: absolute;
+  bottom: -1.5em;
+}
+
+.scherm{
+  position: absolute;
+  top:0.7em;
+  right: 1em;
+  border-radius: .2em;
+  height: 23.4em;
+  width: 43em;
+  z-index: 1;
+  background-color:rgb(102 115 128);
+  box-shadow:
+    inset 0 -.1em .1em rgb(150 150 150),
+    inset 0 .1em .1em rgb(150 150 150);
+} */
+
+
 
 /**************/
 /* CONSOLES */
 /**************/
 
-ol li img {
+ol li > img {
   width: 35%; 
+  z-index: 1;
 }
 
-/**************/
-/* LIST */
-/**************/
+ol li div img{
+  width: 2em;
+
+}
+
+
+/*********/
+/* COIN */
+/*******/
+
+ol li div {
+
+  /* aspect-ratio:1/1;
+  border-radius: 50%;
+  background-color: gold;
+  box-shadow: inset 0 0 0 .2em darkorange; */
+  opacity: 0;
+
+  transition:.2s;
+
+  /* color:darkorange;
+  font-weight:bold; */
+
+  display:grid;
+  place-items: center;
+}
+
+ol li > img:hover + div {
+  animation-name:coin;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+  opacity:1;
+}
+
+@keyframes coin {
+  0% {
+    transform:translate(2em, -1em) ;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform:translate(2em, -10em) rotateY(1turn) scale(1.5);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform:translate(2em, -1em);
+  }
+}
+
+
+
+
+/******************/
+/* LIST  en GRID */
+/****************/
 ol{
   list-style-type: none;
   padding: 0;
@@ -128,7 +355,7 @@ li h2{
   justify-self: end;
 }
 
-li img{
+li img, li div{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start:3 ;
@@ -139,6 +366,7 @@ li article {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start:2;
+  place-self: center;
 }
 
 
@@ -173,12 +401,13 @@ nav button{
 
 nav button img{
   width: 30%;
+  transition: 0.3s;
 }
 
 nav button img:hover{
   width: 30%;
-  filter: drop-shadow(0px 3px 1px #666);
-  transition: 0.3s;
+  transform: scale(1.2);
+  /* filter: drop-shadow(0px 0.1em 0.1em rgba(25, 25, 25, 0.579)); */
 }
 
 
@@ -186,16 +415,17 @@ nav button img:hover{
 /*************************/
 /* Rood Informatie Blok */
 /***********************/
-
 .information{
   top: 0;
   background-color:var(--rood-blok);  
   position: absolute;
-  width: 50vw;
+  width: 35vw;
   height: 100%;
   z-index: 100;
   transform: translateX(calc(-100% + 4em));
   transition: 0.3s;
+  box-shadow: .1em .1em .7em .3em rgb(58 58 58 / 53%);
+  padding: 4em;
 }
 
 .information.menuUitgeklapt{
@@ -213,6 +443,8 @@ nav button img:hover{
   border-radius: 0 1em 1em 0 ;
   display: grid;
   place-items: center;
+  box-shadow: .5em 0em 0.5em .1em rgb(58 58 58 / 33%);
+
 }
 
 .aButton{
@@ -220,9 +452,10 @@ nav button img:hover{
   font-weight: 400;
   font-size: 1em;
   border: none;
-  border-radius: 30em;
-  padding: 1em 1em;
+  border-radius: 50%;
   margin-right: .4em;
+  width: 3em;
+  aspect-ratio: 1/1;
   box-shadow: inset 0.1em 0.1em 0.5em rgb(228 43 43 / 60%),
   0.1em 0.1em 0.5em rgba(101, 101, 101, 0.6);
 }
@@ -232,7 +465,65 @@ nav button img:hover{
   inset 0.3em 0.3em 0.6em rgba(57, 57, 57, 0.6);
 }
 
+h3, h4{
+  font-family:'mario_kart_f2regular'; 
+  font-size: 2em;
+  color: var(--wit-h);
+}
 
+h4{
+  font-size: 1.2em;
+}
+
+h5{
+  top: 5em;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  color: var(--wit-h);
+}
+
+ol li section{
+ text-align: center;
+ width: 50em;
+}
+
+ol li section p , .sub-broodtekst{
+  font-family: sans-serif;
+  font-size: 1.3em;
+  color: var(--wit-h);
+  font-weight: 800;
+  text-align: center;
+}
+
+.sub-broodtekst{
+  font-weight: 200;
+}
+
+ol li section img {
+  padding-top: 5em;
+  width: 5em;
+  animation: blooper 5s infinite;
+  animation-duration: 2s;
+  transition: 0.3s;
+}
+
+ol li section img:hover {
+filter: drop-shadow(.5em .5em 1em rgba(101, 101, 101, 0.6));
+}
+
+@keyframes blooper {
+  0% {
+    transform:translate(2em, -1em) ;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform:translate(2em, -3em) ;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform:translate(2em, -1em);
+  }
+}
 
 
 /*********/
@@ -243,4 +534,5 @@ nav button img:hover{
   --rood-blok:#e4000f;
   --nav-kleur:#EAEAEA;
   --tv-merk:#fff;
+  --wit-h:#fff;
 }
