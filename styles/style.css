@@ -61,6 +61,74 @@ h1, h2 {
   font-family: 'snesitalic';
 }
 
+
+
+
+/******************/
+/* LIST  en GRID */
+/****************/
+ol{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+
+  width:100vw;
+  height:100vh;
+
+  display:flex;
+  overflow:hidden;
+  /* scroll-behaviour:smooth; */
+  scroll-snap-type: x mandatory;
+}
+
+li{
+  width:100vw;
+  height:100vh;
+  flex-shrink:0;
+
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 22.5em 22.5em 1fr;
+  grid-template-rows:1fr 25em 3fr ;
+
+  scroll-snap-align: center;
+}
+
+li h1{
+padding-top: 1em;
+grid-column-start: 2;
+grid-row-start:1 ;
+place-self: end start;
+}
+
+li h2{
+  padding-top: 1em;
+  grid-column-start: 3;
+  grid-row-start:1 ;
+  justify-self: end;
+  align-self: end;
+}
+
+li img, li div{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start:3 ;
+  place-self: start center;
+}
+
+li article {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start:2;
+  place-self: center;
+}
+
+
+
+
 /**************/
 /* DE TV 1992 */
 /**************/
@@ -118,7 +186,7 @@ article p{
 /* DE TV 2000> */
 /**************/
 
-/* article {
+.tv-2000 {
   position: relative;
   width:45em;
   height:25em;
@@ -130,7 +198,7 @@ article p{
     .1em .1em 1em rgb(0 0 0 / .5);
 }
 
-article p{
+.tv-2000 p{
   font-size: .6em;
   color: white;
   transform: translateX(-50%); 
@@ -149,7 +217,7 @@ article p{
   border-radius: 2em;
 }
 
-.scherm{
+.scherm-2000{
   position: absolute;
   top:2.4em;
   right: 3em;
@@ -160,7 +228,7 @@ article p{
   box-shadow:
     inset 0 -.1em .1em rgb(150 150 150),
     inset 0 .1em .1em rgb(150 150 150);
-} */
+} 
 
 
 
@@ -168,7 +236,7 @@ article p{
 /**************/
 /* DE TV 2010> */
 /**************/
-/* article {
+.tv-2010 {
   position: relative;
   width:45em;
   height:25em;
@@ -180,7 +248,7 @@ article p{
     .1em .1em 1em rgb(0 0 0 / .5);
 }
 
-article p{
+.tv-2010 p{
   font-size: .6em;
   color: white;
   transform: translateX(-50%); 
@@ -199,7 +267,7 @@ article p{
   border-radius: 2em;
 }
 
-.scherm{
+.scherm-2010{
   position: absolute;
   top:1em;
   right: 1.5em;
@@ -210,7 +278,7 @@ article p{
   box-shadow:
     inset 0 -.1em .1em rgb(150 150 150),
     inset 0 .1em .1em rgb(150 150 150);
-} */
+}
 
 
 
@@ -218,7 +286,7 @@ article p{
 /**************/
 /* DE TV 2017> */
 /**************/
-/* article {
+.tv-2017 {
   position: relative;
   width:45em;
   height:25em;
@@ -243,16 +311,18 @@ article p{
     .1em .1em 1em rgb(0 0 0 / .5);
 }
 
-article p{
+.tv-2017 p{
   font-size: .6em;
   color: white;
   transform: translateX(-50%); 
   left: 50%;
+  z-index: 1;
+
   position: absolute;
   bottom: -1.5em;
 }
 
-.scherm{
+.scherm-2017{
   position: absolute;
   top:0.7em;
   right: 1em;
@@ -264,7 +334,7 @@ article p{
   box-shadow:
     inset 0 -.1em .1em rgb(150 150 150),
     inset 0 .1em .1em rgb(150 150 150);
-} */
+}
 
 
 
@@ -283,25 +353,19 @@ ol li div img{
 }
 
 
+
 /*********/
 /* COIN */
 /*******/
 
 ol li div {
-
-  /* aspect-ratio:1/1;
-  border-radius: 50%;
-  background-color: gold;
-  box-shadow: inset 0 0 0 .2em darkorange; */
   opacity: 0;
 
   transition:.2s;
 
-  /* color:darkorange;
-  font-weight:bold; */
-
   display:grid;
-  place-items: center;
+  transform:translate(2em, 4em) ;
+  place-self: start center;
 }
 
 ol li > img:hover + div {
@@ -313,61 +377,18 @@ ol li > img:hover + div {
 
 @keyframes coin {
   0% {
-    transform:translate(2em, -1em) ;
+    transform:translate(2em, 4em) ;
     animation-timing-function: ease-out;
   }
   50% {
-    transform:translate(2em, -10em) rotateY(1turn) scale(1.5);
+    transform:translate(2em, -5em) rotateY(1turn) scale(1.5);
     animation-timing-function: ease-in;
   }
   100% {
-    transform:translate(2em, -1em);
+    transform:translate(2em, 4em);
   }
 }
 
-
-
-
-/******************/
-/* LIST  en GRID */
-/****************/
-ol{
-  list-style-type: none;
-  padding: 0;
-}
-
-li{
-  display: grid;
-  grid-template-columns: 1fr 22.5em 22.5em 1fr;
-  grid-template-rows:1fr 25em 2fr ;
-}
-
-li h1{
-padding-top: 1em;
-grid-column-start: 2;
-grid-row-start:1 ;
-}
-
-li h2{
-  padding-top: 1em;
-  grid-column-start: 3;
-  grid-row-start:1 ;
-  justify-self: end;
-}
-
-li img, li div{
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start:3 ;
-  place-self: center;
-}
-
-li article {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start:2;
-  place-self: center;
-}
 
 
 
@@ -508,7 +529,7 @@ ol li section img {
 }
 
 ol li section img:hover {
-filter: drop-shadow(.5em .5em 1em rgba(101, 101, 101, 0.6));
+filter: drop-shadow(.5em .5em 1em var(--shadow-1));
 }
 
 @keyframes blooper {
@@ -518,6 +539,7 @@ filter: drop-shadow(.5em .5em 1em rgba(101, 101, 101, 0.6));
   }
   50% {
     transform:translate(2em, -3em) ;
+    /* background-image: url("../../Interface-InteractieVID2/images/inkSplash.png"); */
     animation-timing-function: ease-in;
   }
   100% {
@@ -535,4 +557,5 @@ filter: drop-shadow(.5em .5em 1em rgba(101, 101, 101, 0.6));
   --nav-kleur:#EAEAEA;
   --tv-merk:#fff;
   --wit-h:#fff;
+  --shadow-1:rgba(101, 101, 101, 0.6) 
 }
