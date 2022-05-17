@@ -136,12 +136,12 @@ article {
   position: relative;
   width:30em;
   height:25em;
-  background-color:rgb(30 30 30);
+  background-color:var(--tv-blokje);
   border-radius: .5em;
   box-shadow:
-    inset .15em .15em .15em rgb(100 100 100),
-    inset -.15em -.15em .2em rgb(100 100 100),
-    .1em .1em 1em rgb(0 0 0 / .5);
+    inset .15em .15em .15em var(--inset-shadow),
+    inset -.15em -.15em .2em var(--inset-shadow),
+    .1em .1em 1em var(--tv-shadows);
 }
 
 article p{
@@ -160,7 +160,7 @@ article p{
   right:1em;
   bottom: 1em;
   padding: .25em;
-  background-color: var(--rood-blok)ed;
+  background-color: var(--rood-blok);
   border-style: none;
   border-radius: 2em;
 }
@@ -172,10 +172,10 @@ article p{
   border-radius: .2em;
   height: 20em;
   width: 25em;
-  background-color:rgb(70 70 70);
+  background-color:var(--scherm-1992);
   box-shadow:
-    inset 0 -.1em .1em rgb(150 150 150),
-    inset 0 .1em .1em rgb(150 150 150);
+    inset 0 -.1em .1em var(--tv-scherm-shadow),
+    inset 0 .1em .1em var(--tv-scherm-shadow);
 }
 
 
@@ -190,17 +190,17 @@ article p{
   position: relative;
   width:45em;
   height:25em;
-  background-color:rgb(30 30 30);
+  background-color:var(--tv-blokje);
   border-radius: .5em;
   box-shadow:
-    inset .15em .15em .15em rgb(100 100 100),
-    inset -.15em -.15em .2em rgb(100 100 100),
-    .1em .1em 1em rgb(0 0 0 / .5);
+    inset .15em .15em .15em var(--inset-shadow),
+    inset -.15em -.15em .2em var(--inset-shadow),
+    .1em .1em 1em var(--tv-shadows);
 }
 
 .tv-2000 p{
   font-size: .6em;
-  color: white;
+  color: var(--wit-p);
   transform: translateX(-50%); 
   left: 50%;
   position: absolute;
@@ -212,7 +212,7 @@ article p{
   right:1em;
   bottom: 1em;
   padding: .25em;
-  background-color: red;
+  background-color: var(--rood-blok);
   border-style: none;
   border-radius: 2em;
 }
@@ -224,10 +224,62 @@ article p{
   border-radius: .2em;
   height: 20em;
   width: 39em;
-  background-color:rgb(102 115 128);
+  background-color:var(--tv-scherm);
   box-shadow:
-    inset 0 -.1em .1em rgb(150 150 150),
-    inset 0 .1em .1em rgb(150 150 150);
+    inset 0 -.1em .1em var(--tv-scherm-shadow),
+    inset 0 .1em .1em var(--tv-scherm-shadow);
+} 
+
+/**************/
+/*  Gameboy scherm */
+/**************/
+.scherm-gameboy {
+  position: relative;
+  width:22em;
+  height:22em;
+  background-color:var(--tv-blokje);
+  border-radius: .5em;
+  box-shadow:
+    inset .15em .15em .15em var(--inset-shadow),
+    inset -.15em -.15em .2em var(--inset-shadow),
+    .1em .1em 1em var(--tv-shadows);
+}
+
+.scherm-2000-gameboy{
+  position: absolute;
+  top:1em;
+  right: 1em;
+  border-radius: .2em;
+  border-radius: .5em;
+  height: 20em;
+  width: 20em;
+  border: 1em solid var(--border-black); 
+  background-color:var(--tv-scherm);
+  box-shadow:
+    inset 0 -.1em .1em var(--tv-scherm-shadow),
+    inset 0 .1em .1em var(--tv-scherm-shadow);
+} 
+
+.smaller {
+  width: 25%;
+}
+
+/**************/
+/*  DS scherm */
+/**************/
+.scherm-2000-DS{
+  position: absolute;
+  top:2.4em;
+  right: 3em;
+  border-radius: .2em;
+  height: 20em;
+  border-style: outset;
+  border: 1em solid var(--border-black); 
+  width: 39em;
+  background-color:var(--tv-scherm);
+  box-shadow:
+    inset 0 -.1em .1em var(--tv-scherm-shadow),
+    inset 0 .1em .1em var(--tv-scherm-shadow);
 } 
 
 
@@ -240,17 +292,17 @@ article p{
   position: relative;
   width:45em;
   height:25em;
-  background-color:rgb(30 30 30);
+  background-color:var(--tv-blokje);
   border-radius: .5em;
   box-shadow:
-    inset .15em .15em .15em rgb(100 100 100),
-    inset -.15em -.15em .2em rgb(100 100 100),
-    .1em .1em 1em rgb(0 0 0 / .5);
+    inset .15em .15em .15em var(--inset-shadow),
+    inset -.15em -.15em .2em var(--inset-shadow),
+    .1em .1em 1em var(--tv-shadows);
 }
 
 .tv-2010 p{
   font-size: .6em;
-  color: white;
+  color: var(--wit-p);
   transform: translateX(-50%); 
   left: 50%;
   position: absolute;
@@ -262,7 +314,7 @@ article p{
   right:1em;
   bottom: 1em;
   padding: .25em;
-  background-color: red;
+  background-color: var(--rood-blok);
   border-style: none;
   border-radius: 2em;
 }
@@ -274,10 +326,10 @@ article p{
   border-radius: .2em;
   height: 22em;
   width: 42em;
-  background-color:rgb(102 115 128);
+  background-color:var(--tv-scherm);
   box-shadow:
-    inset 0 -.1em .1em rgb(150 150 150),
-    inset 0 .1em .1em rgb(150 150 150);
+    inset 0 -.1em .1em var(--tv-scherm-shadow),
+    inset 0 .1em .1em var(--tv-scherm-shadow);
 }
 
 
@@ -290,16 +342,16 @@ article p{
   position: relative;
   width:45em;
   height:25em;
-  background-color:rgb(30 30 30);
+  background-color: var(--tv-blokje);
   border-radius: .5em;
   box-shadow:
-    inset .15em .15em .15em rgb(100 100 100),
-    inset -.15em -.15em .2em rgb(100 100 100),
-    .1em .1em 1em rgb(0 0 0 / .5);
+    inset .15em .15em .15em var(--inset-shadow),
+    inset -.15em -.15em .2em var(--inset-shadow),
+    .1em .1em 1em var(--tv-shadows);
 }
 
 .merk-naam-blokje{
-  background-color: rgb(30 30 30);
+  background-color:var(--tv-blokje) ;
   position: absolute;
   height: 2em;
   width: 4em;
@@ -308,12 +360,12 @@ article p{
   left: 50%;
   border-radius: 10% 10% 52% 48% / 0% 0% 20% 20% ;
   box-shadow:
-    .1em .1em 1em rgb(0 0 0 / .5);
+    .1em .1em 1em var(--tv-shadows);
 }
 
 .tv-2017 p{
   font-size: .6em;
-  color: white;
+  color: var(--tv-merk);
   transform: translateX(-50%); 
   left: 50%;
   z-index: 1;
@@ -330,10 +382,10 @@ article p{
   height: 23.4em;
   width: 43em;
   z-index: 1;
-  background-color:rgb(102 115 128);
+  background-color: var(--tv-scherm);
   box-shadow:
-    inset 0 -.1em .1em rgb(150 150 150),
-    inset 0 .1em .1em rgb(150 150 150);
+    inset 0 -.1em .1em var(--tv-scherm-shadow),
+    inset 0 .1em .1em var(--tv-scherm-shadow);
 }
 
 
@@ -428,7 +480,6 @@ nav button img{
 nav button img:hover{
   width: 30%;
   transform: scale(1.2);
-  /* filter: drop-shadow(0px 0.1em 0.1em rgba(25, 25, 25, 0.579)); */
 }
 
 
@@ -445,7 +496,7 @@ nav button img:hover{
   z-index: 100;
   transform: translateX(calc(-100% + 4em));
   transition: 0.3s;
-  box-shadow: .1em .1em .7em .3em rgb(58 58 58 / 53%);
+  box-shadow: .1em .1em .7em .3em var(--redBlock-shadow);
   padding: 4em;
 }
 
@@ -464,7 +515,7 @@ nav button img:hover{
   border-radius: 0 1em 1em 0 ;
   display: grid;
   place-items: center;
-  box-shadow: .5em 0em 0.5em .1em rgb(58 58 58 / 33%);
+  box-shadow: .5em 0em 0.5em .1em var(--redBlock-shadow);
 
 }
 
@@ -477,19 +528,19 @@ nav button img:hover{
   margin-right: .4em;
   width: 3em;
   aspect-ratio: 1/1;
-  box-shadow: inset 0.1em 0.1em 0.5em rgb(228 43 43 / 60%),
-  0.1em 0.1em 0.5em rgba(101, 101, 101, 0.6);
+  box-shadow: inset 0.1em 0.1em 0.5em var(--a-button-hover),
+  0.1em 0.1em 0.5em var(--shadow-1);
 }
 
 .aButton:hover{
-  box-shadow: 0.1em 0.1em 0.5em rgb(228 43 43 / 60%),
-  inset 0.3em 0.3em 0.6em rgba(57, 57, 57, 0.6);
+  box-shadow: 0.1em 0.1em 0.5em var(--a-button-hover),
+  inset 0.3em 0.3em 0.6em var(--a-button-hover-inset);
 }
 
 h3, h4{
   font-family:'mario_kart_f2regular'; 
   font-size: 2em;
-  color: var(--wit-h);
+  color: var(--heading-wit);
 }
 
 h4{
@@ -500,7 +551,7 @@ h5{
   top: 5em;
   font-family: sans-serif;
   font-size: 1.2em;
-  color: var(--wit-h);
+  color: var(--heading-wit);
 }
 
 ol li section{
@@ -511,7 +562,7 @@ ol li section{
 ol li section p , .sub-broodtekst{
   font-family: sans-serif;
   font-size: 1.3em;
-  color: var(--wit-h);
+  color: var(--wit-p);
   font-weight: 800;
   text-align: center;
 }
@@ -552,10 +603,34 @@ filter: drop-shadow(.5em .5em 1em var(--shadow-1));
 /* ROOT */
 /*******/
 :root {
+  /*information block */ 
   --h1-h2:#A2A2A2;
   --rood-blok:#e4000f;
+  --redBlock-shadow: rgb(58 58 58 / 33%);
+
+
+  /*navigatie */
   --nav-kleur:#EAEAEA;
+  
+
+   /* headings + P's */
+  --heading-wit:#fff;
+  --wit-p:#fff;
+
+
+  /* TV */
   --tv-merk:#fff;
-  --wit-h:#fff;
-  --shadow-1:rgba(101, 101, 101, 0.6) 
+  --shadow-1:rgba(101, 101, 101, 0.6);
+  --tv-blokje: rgb(30 30 30); 
+  --tv-shadows: rgb(0 0 0 / .5);
+  --tv-scherm: rgb(102 115 128);
+  --tv-scherm-shadow: rgb(150 150 150);
+  --inset-shadow: rgb(100 100 100);
+  --scherm-1992: rgb(70 70 70);
+  --border-black: black; 
+
+
+  /* a/b button */
+  --a-button-hover: rgb(228 43 43 / 60%); 
+  --a-button-hover-inset: rgba(57, 57, 57, 0.6);  
 }
