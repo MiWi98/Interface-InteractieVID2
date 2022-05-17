@@ -54,12 +54,37 @@ button:not([disabled]) {
   cursor:pointer;
 }
 
+
+
+/*********/
+/* HEADINGS */
+/*******/
 h1, h2 {
   color:var(--h1-h2);
   text-transform: uppercase;
   font-size: 2em;
   font-family: 'snesitalic';
 }
+
+h3, h4{
+  font-family:'mario_kart_f2regular'; 
+  font-size: 2em;
+  color: var(--heading-wit);
+}
+
+h4{
+  font-size: 1.2em;
+}
+
+h5{
+  font-family: sans-serif;
+  font-size: 1.2em;
+  color: var(--heading-wit);
+  margin: 0;
+  padding: 2em 1em 0em 1em;
+}
+
+
 
 
 /*********/
@@ -624,38 +649,17 @@ nav button img:focus{
   inset 0.3em 0.3em 0.6em var(--a-button-hover-inset);
 }
 
-h3, h4{
-  font-family:'mario_kart_f2regular'; 
-  font-size: 2em;
-  color: var(--heading-wit);
-}
-
-h4{
-  font-size: 1.2em;
-}
-
-h5{
-  top: 5em;
-  font-family: sans-serif;
-  font-size: 1.2em;
-  color: var(--heading-wit);
-}
-
 ol li section{
  text-align: center;
  width: 50em;
 }
 
-ol li section p , .sub-broodtekst{
+ol li section p {
   font-family: sans-serif;
   font-size: 1.3em;
   color: var(--wit-p);
-  font-weight: 800;
+  font-weight: 300;
   text-align: center;
-}
-
-.sub-broodtekst{
-  font-weight: 200;
 }
 
 ol li section.information > img {
@@ -710,14 +714,69 @@ aside > img{
 }
 
 aside > button{
-  align-items: center;
+  font-family: avenir, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+
   background-color: var(--button-start);
+
+  align-items: center;
   padding: 1em 3em 1em 3em;
+
   border: none;
   border-radius: 4em;
+  box-shadow: 0em 0em 1em .1em var(--button-start);
+
+  transition: 0.3s;
+
 }
+
+aside > button:hover{ 
+ transform: scale(1.2);
+
+}
+aside > button:focus{ 
+  transform: scale(1.2);
+  outline: none;
+  border: none;
+ }
 
 aside.gestart {
   opacity:0;
   pointer-events: none; /* hiermee zet je de pointer/mouse events van de bovenste laag uit zodat je kan klikken op de buttons van de laag eronder */
 }
+
+
+/***************/
+/* Ink Splash */
+/***************/
+
+/* .ink-Splash{
+  background: url("../../Interface-InteractieVID2/images/inkSplash.png") no-repeat center center fixed;
+  z-index: 10000;
+  opacity: 1;
+  animation-name: ink-splash;
+}
+
+body > img {
+width: 100vw;
+animation-name: ink-splash;
+transition: 2.5s;
+}
+
+body > img:hover {
+cursor: pointer;
+  }
+
+@keyframes ink-splash {
+0% {
+    opacity: 0;
+}
+50%{
+  opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+} */

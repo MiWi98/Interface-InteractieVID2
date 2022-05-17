@@ -132,10 +132,72 @@ function starten() {
 
 
 /* AUDIO COIN */
-var audioCoin = document.getElementsByTagName("audio");
+var audioConsole1 = document.querySelector("ol li:nth-of-type(1) > img");
+audioConsole1.addEventListener("mouseover", playAudio);
+audioConsole1.addEventListener("mouseleave", stopAudio);
 
-audioCoin.addEventListener("mouseover", playAudio)
+var audioConsole2 = document.querySelector("ol li:nth-of-type(2) > img");
+audioConsole2.addEventListener("mouseover", playAudio);
+audioConsole2.addEventListener("mouseleave", stopAudio);
+
+var audioConsole3 = document.querySelector("ol li:nth-of-type(3) > img");
+audioConsole3.addEventListener("mouseover", playAudio);
+audioConsole3.addEventListener("mouseleave", stopAudio);
+
+var audioConsole4 = document.querySelector("ol li:nth-of-type(4) > img");
+audioConsole4.addEventListener("mouseover", playAudio);
+audioConsole4.addEventListener("mouseleave", stopAudio);
+
+var audioConsole5 = document.querySelector("ol li:nth-of-type(5) > img");
+audioConsole5.addEventListener("mouseover", playAudio);
+audioConsole5.addEventListener("mouseleave", stopAudio);
+
+var audioConsole6 = document.querySelector("ol li:nth-of-type(6) > img");
+audioConsole6.addEventListener("mouseover", playAudio);
+audioConsole6.addEventListener("mouseleave", stopAudio);
+
+var audioConsole6 = document.querySelector("ol li:nth-of-type(6) > img");
+audioConsole6.addEventListener("mouseover", playAudio);
+audioConsole6.addEventListener("mouseleave", stopAudio);
+
+var audioConsole7 = document.querySelector("ol li:nth-of-type(7) > img");
+audioConsole7.addEventListener("mouseover", playAudio);
+audioConsole7.addEventListener("mouseleave", stopAudio);
+
+var audioConsole8 = document.querySelector("ol li:nth-of-type(8) > img");
+audioConsole8.addEventListener("mouseover", playAudio);
+audioConsole8.addEventListener("mouseleave", stopAudio);
+
+var audioConsole9 = document.querySelector("ol li:nth-of-type(9) > img");
+audioConsole9.addEventListener("mouseover", playAudio);
+audioConsole9.addEventListener("mouseleave", stopAudio);
+
+var audio = document.querySelector("audio");
 
 function playAudio() {
-    audioCoin.play();
+    audio.play();
 }
+
+function stopAudio() {
+    audio.pause();
+    audio.currentTime = 0;
+}
+
+
+//  var startSound = document.querySelector(".start-screen");
+//  startSound.addEventListener("DOMContentLoaded", playintro);
+//  startSound.addEventListener("unload", stopintro);
+
+//  function playintro() {
+//     startSound.play();
+// }
+
+/* Ink Splash */
+// var inkSplash = document.querySelector("body  img");
+// var blooper = document.querySelector("ol li section.information > img");
+
+// blooper.addEventListener("click", splat);
+
+// function splat(){
+//     blooper.classList.add(".ink-Splash");
+// }
