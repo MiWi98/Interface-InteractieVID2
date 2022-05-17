@@ -5,8 +5,6 @@ var alleABButtons = document.querySelectorAll(".aButton"); // alle ABButtons
 var menu; // hier steede de information section instoppen die relevant is
 var ABButton; // hier steede de ABButton instoppen die relevant is
 // var buttonA = true;
-var audio = new Audio('../../coin.mp3');
-
 
 
 
@@ -84,11 +82,6 @@ function uitklap(){
 
 
 
-
-
-
-
-
 /* LI's heen en weer */
 var naarRechtsButton = document.querySelector("nav button:last-of-type");
 var naarLinksButton = document.querySelector("nav button:first-of-type");
@@ -125,3 +118,24 @@ document.addEventListener('keydown', event => {
         naarRechts(); // bron: https://stackoverflow.com/questions/59269523/keydown-event-triggering-classlist-remove-doesnt-work-if-the-key-is-pressed-too 
     }
 });
+
+
+/* Start scherm */
+var startScherm = document.querySelector("aside");
+var startButton = document.querySelector("aside button");
+
+startButton.addEventListener("click", starten);
+
+function starten() {
+    startScherm.classList.add("gestart"); //hiermee zet je de class .gestart wat gedefineerd staat in de css erop.
+}
+
+
+/* AUDIO COIN */
+var audioCoin = document.getElementsByTagName("audio");
+
+audioCoin.addEventListener("mouseover", playAudio)
+
+function playAudio() {
+    audioCoin.play();
+}

@@ -55,14 +55,14 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
 <details>
   <img src="readme-images/feedback.png" width="375px" alt="Feedback">
 
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Mijn bevindingen + wijzigingen </summary>
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  "Wil je de tekst meteen hebben uitgeklapt? 
+  Of ga je hier gebruik maken progressive disclosure?."
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik had hier inderdaad nog niet over nagedacht. Ik heb daarom het idee verzonnen om 
 
 
   ### Bevinding 2:
