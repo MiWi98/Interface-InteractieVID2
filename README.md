@@ -122,7 +122,7 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
 
 <details>
   <summary>Mijn bevindingen + wijzigingen</summary>
-      <img src="readme-images/Feedback3.jpg" width="200px" alt="Feedback">
+      <img src="readme-images/Feedback3.jpg" width="350px" alt="Feedback">
 
   
   ### Bevinding 1:
