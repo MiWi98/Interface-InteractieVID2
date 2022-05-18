@@ -159,7 +159,8 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
   Tijdens de lessen had ik een idee gemaakt waarvan ik aan het begin dacht gaat dit mij wel lukken. 
   - Tijdens één van de eerste lessen kregen we te horen over grid. Ik kende zelf wel al flexbox maar niet Grid. 
     Ik heb dit dan ook met de hulp van Sanne toegepast in mijn website. 
-  - Ook heb ik geleerd over de :Root, in de root zet je alle kleuren neer van de website waarvan je later eventueel de kleuren zo kunnen wijzigen op één plek. Ik vind dit    een handige manier om de kleuren makkelijk te wijzigen in de css. Wel heb ik nog moeite met een goede naamgeving hiervan. 
+  - Ook heb ik geleerd over de :Root, in de root zet je alle kleuren neer van de website waarvan je later eventueel de kleuren zou kunnen wijzigen op één plek. 
+  Ik vind dit een handige manier om de kleuren makkelijk te wijzigen in de css. Wel heb ik nog moeite met een goede naamgeving hiervan. 
   -  Javascript: Ik had als ambitie dat ik graag meer wilde leren over Javascript. Ik heb naar mijn idee dat doel gehaald.
    Wel heb ik nog steeds moeite met de function (){ }  goed neer te zetten en wat er allemaal mee werkt. 
    Als ik kijk naar hoe ik begon met Javascript dat ik er eigenlijk wat meer bang voor was en nu ben ik er eigenlijk meer enthousiast over geworden. 
