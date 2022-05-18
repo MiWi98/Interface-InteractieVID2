@@ -122,7 +122,7 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
 
 <details>
   <summary>Mijn bevindingen + wijzigingen</summary>
-      <img src="readme-images/feedback3.jpg" width="200px" alt="Feedback">
+      <img src="readme-images/Feedback3.jpg" width="200px" alt="Feedback">
 
   
   ### Bevinding 1:
@@ -194,7 +194,7 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
   - Easter eggs: Ik had meer easter eggs/Items willen toepassen van Mario Kart zelf. Net zoals in Mario Kart wordt je overspoelt met items.
     Ik had dat ook een beetje willen doen in mijn website.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/bummer.png" width="375px" alt="bummer">
 </details>
 
 
