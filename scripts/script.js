@@ -1,11 +1,8 @@
 // JavaScript Document
-console.log("Howdy!");
 var alleABButtons = document.querySelectorAll(".aButton"); // alle ABButtons
 
-var menu; // hier steede de information section instoppen die relevant is
-var ABButton; // hier steede de ABButton instoppen die relevant is
-// var buttonA = true;
-
+var menu; // hier steeds de information section instoppen die relevant is
+var ABButton; // hier steeds de ABButton in stoppen die relevant is
 
 
 // alle ABButtons gaan luisteren naar kliks
@@ -14,7 +11,7 @@ alleABButtons.forEach(alleABButton => {
 });
 
 
-// deze functie uitvoeren als er op een ABButtin is geklikt
+// deze functie uitvoeren als er op een ABButton is geklikt
 function ABButtonGeklikt(event) {
     // this is de ABButton waarop geklikt is
     // die in de variabele stoppen
@@ -49,7 +46,7 @@ document.addEventListener('keydown', event => {
         }
     }
 
-    else if (event.code == "KeyB"){
+    else if (event.code == "KeyB"){ // bron: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode & https://www.toptal.com/developers/keycode & Sanne
         menu = document.querySelector("ol > li:nth-of-type(" + huidigePos + ") .information");
         ABButton = menu.querySelector("button.aButton");
 
@@ -62,7 +59,7 @@ document.addEventListener('keydown', event => {
 });
 
 
-function uitklap(){
+function uitklap(){ //bron voor het veranderen van de button tekst: https://codepen.io/MiWin/pen/KKQgVGb
     // menu is nu open - dan dicht
     if (menu.classList.contains('menuUitgeklapt')) {
         ABButton.textContent = "A";
@@ -79,9 +76,6 @@ function uitklap(){
 
 
 
-
-
-
 /* LI's heen en weer */
 var naarRechtsButton = document.querySelector("nav button:last-of-type");
 var naarLinksButton = document.querySelector("nav button:first-of-type");
@@ -90,12 +84,18 @@ var huidigePos = 1;
 naarRechtsButton.addEventListener("click", naarRechts);
 naarLinksButton.addEventListener("click", naarLinks);
 
+const consoles = ["Super Nintendo Entertainment System", "Nintendo 64", "Gameboy Advance", "Gamecube", "DS Lite", "Wii", "Wii U", "Nintendo Switch", "Mobiel"]; //const uitleg: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/constn
+
 function naarRechts() {
-    huidigePos = huidigePos + 1;
+    huidigePos = huidigePos + 1; //huidige pos van de li wordt gewijzigd
 
     var nieuweLi = document.querySelector("ol > li:nth-of-type(" + huidigePos + ")");
 
-    nieuweLi.scrollIntoView({behavior: "smooth"});
+    nieuweLi.scrollIntoView({behavior: "smooth"}); 
+
+    var navText = document.querySelector("nav > p");
+    navText.textContent = `${consoles[huidigePos-1]}`;
+
 }
 
 function naarLinks() {
@@ -104,7 +104,12 @@ function naarLinks() {
     var nieuweLi = document.querySelector("ol > li:nth-of-type(" + huidigePos + ")");
 
     nieuweLi.scrollIntoView({behavior: "smooth"});
+
+    var navText = document.querySelector("nav > p"); // Hiermee haal ik de tekst in de nav op 
+    navText.textContent = `${consoles[huidigePos-1]}`; //Yarre heeft mij geholpen met het opzetten van de array en Milan heeft mij geholpen met het maken van een Array in de code werkend
 }
+
+
 
 
 /* pijltjes toetsen heen en weer */
@@ -120,6 +125,8 @@ document.addEventListener('keydown', event => {
 });
 
 
+
+
 /* Start scherm */
 var startScherm = document.querySelector("aside");
 var startButton = document.querySelector("aside button");
@@ -127,12 +134,14 @@ var startButton = document.querySelector("aside button");
 startButton.addEventListener("click", starten);
 
 function starten() {
-    startScherm.classList.add("gestart"); //hiermee zet je de class .gestart wat gedefineerd staat in de css erop.
+    startScherm.classList.add("gestart"); //hiermee zet je de class .gestart wat gedefineerd staat in de css erop. 
 }
 
 
+
+
 /* AUDIO COIN */
-var audioConsole1 = document.querySelector("ol li:nth-of-type(1) > img");
+var audioConsole1 = document.querySelector("ol li:nth-of-type(1) > img"); //hiermee haal ik de img op van de coin in het html bestand per li 
 audioConsole1.addEventListener("mouseover", playAudio);
 audioConsole1.addEventListener("mouseleave", stopAudio);
 
@@ -172,7 +181,7 @@ var audioConsole9 = document.querySelector("ol li:nth-of-type(9) > img");
 audioConsole9.addEventListener("mouseover", playAudio);
 audioConsole9.addEventListener("mouseleave", stopAudio);
 
-var audio = document.querySelector("audio");
+var audio = document.querySelector("audio"); //hiermee haal ik het audio bestand op.
 
 function playAudio() {
     audio.play();
@@ -180,24 +189,50 @@ function playAudio() {
 
 function stopAudio() {
     audio.pause();
-    audio.currentTime = 0;
+    audio.currentTime = 0; //hiermee kan je het bestand opnieuw laten afspelen vanaf 00:00
 }
 
 
-//  var startSound = document.querySelector(".start-screen");
-//  startSound.addEventListener("DOMContentLoaded", playintro);
-//  startSound.addEventListener("unload", stopintro);
 
-//  function playintro() {
-//     startSound.play();
-// }
 
 /* Ink Splash */
-// var inkSplash = document.querySelector("body  img");
-// var blooper = document.querySelector("ol li section.information > img");
+var inkSplash = document.querySelector("body > img");
 
-// blooper.addEventListener("click", splat);
+var blooper1 = document.querySelector("ol li:nth-of-type(1) section.information > img");
+blooper1.addEventListener("click", splat);
 
-// function splat(){
-//     blooper.classList.add(".ink-Splash");
-// }
+var blooper2 = document.querySelector("ol li:nth-of-type(2) section.information > img");
+blooper2.addEventListener("click", splat);
+
+var blooper3 = document.querySelector("ol li:nth-of-type(3) section.information > img");
+blooper3.addEventListener("click", splat);
+
+var blooper4 = document.querySelector("ol li:nth-of-type(4) section.information > img");
+blooper4.addEventListener("click", splat);
+
+var blooper5 = document.querySelector("ol li:nth-of-type(5) section.information > img");
+blooper5.addEventListener("click", splat);
+
+var blooper6 = document.querySelector("ol li:nth-of-type(6) section.information > img");
+blooper6.addEventListener("click", splat);
+
+var blooper7 = document.querySelector("ol li:nth-of-type(7) section.information > img");
+blooper7.addEventListener("click", splat);
+
+var blooper8 = document.querySelector("ol li:nth-of-type(8) section.information > img");
+blooper8.addEventListener("click", splat);
+
+var blooper9 = document.querySelector("ol li:nth-of-type(9) section.information > img");
+blooper9.addEventListener("click", splat);
+
+
+
+function splat(){
+    inkSplash.classList.add("ink-Splash");
+
+    inkSplash.addEventListener("animationend", inktIsWeerWeg);
+}
+
+function inktIsWeerWeg() {
+    inkSplash.classList.remove("ink-Splash");
+}

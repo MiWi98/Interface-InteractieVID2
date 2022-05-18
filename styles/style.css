@@ -19,6 +19,14 @@
 }
 
 @font-face {
+  font-family: 'pixes-regular';
+  src: url('../fonts/pixes-regular-webfont.woff2') format('woff2'),
+    url('../fonts/pixes-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'mario_kart_f2regular';
   src: url('../fonts/mario_kart_f2-webfont.woff2') format('woff2'),
        url('../fonts/mario_kart_f2-webfont.woff') format('woff');
@@ -56,6 +64,47 @@ button:not([disabled]) {
 
 
 
+
+/*********/
+/* ROOT */
+/*******/
+:root {
+  /*information block */ 
+  --h1-h2:#A2A2A2;
+  --rood-blok:#e4000f;
+  --redBlock-shadow: rgb(58 58 58 / 33%);
+
+
+  /*navigatie */
+  --nav-kleur:#EAEAEA;
+  
+
+  /* headings + P's */
+  --heading-wit:#fff;
+  --wit-p:#fff;
+
+
+  /* TV */
+  --tv-merk:#fff;
+  --shadow-1:rgba(101, 101, 101, 0.6);
+  --tv-blokje: rgb(30 30 30); 
+  --tv-shadows: rgb(0 0 0 / .5);
+  --tv-scherm: rgb(102 115 128);
+  --tv-scherm-shadow: rgb(150 150 150);
+  --inset-shadow: rgb(100 100 100);
+  --scherm-1992: rgb(70 70 70);
+  --border-black: black; 
+
+
+  /* buttons */
+  --a-button-hover: rgb(228 43 43 / 60%); 
+  --a-button-hover-inset: rgba(57, 57, 57, 0.6);  
+  --button-start: #fff;
+}
+
+
+
+
 /*********/
 /* HEADINGS */
 /*******/
@@ -82,46 +131,6 @@ h5{
   color: var(--heading-wit);
   margin: 0;
   padding: 2em 1em 0em 1em;
-}
-
-
-
-
-/*********/
-/* ROOT */
-/*******/
-:root {
-  /*information block */ 
-  --h1-h2:#A2A2A2;
-  --rood-blok:#e4000f;
-  --redBlock-shadow: rgb(58 58 58 / 33%);
-
-
-  /*navigatie */
-  --nav-kleur:#EAEAEA;
-  
-
-   /* headings + P's */
-  --heading-wit:#fff;
-  --wit-p:#fff;
-
-
-  /* TV */
-  --tv-merk:#fff;
-  --shadow-1:rgba(101, 101, 101, 0.6);
-  --tv-blokje: rgb(30 30 30); 
-  --tv-shadows: rgb(0 0 0 / .5);
-  --tv-scherm: rgb(102 115 128);
-  --tv-scherm-shadow: rgb(150 150 150);
-  --inset-shadow: rgb(100 100 100);
-  --scherm-1992: rgb(70 70 70);
-  --border-black: black; 
-
-
-  /* buttons */
-  --a-button-hover: rgb(228 43 43 / 60%); 
-  --a-button-hover-inset: rgba(57, 57, 57, 0.6);  
-  --button-start: #fff;
 }
 
 
@@ -160,10 +169,10 @@ li{
 }
 
 li h1{
-padding-top: 1em;
-grid-column-start: 2;
-grid-row-start:1 ;
-place-self: end start;
+  padding-top: 1em;
+  grid-column-start: 2;
+  grid-row-start:1 ;
+  place-self: end start;
 }
 
 li h2{
@@ -198,8 +207,11 @@ article {
   position: relative;
   width:30em;
   height:25em;
+
   background-color:var(--tv-blokje);
+
   border-radius: .5em;
+
   box-shadow:
     inset .15em .15em .15em var(--inset-shadow),
     inset -.15em -.15em .2em var(--inset-shadow),
@@ -209,20 +221,25 @@ article {
 article p{
   font-family: Helvetica;
   font-size: 0.64em;
+  font-weight: 800;
+
   color: white;
+
   transform: translateX(-50%); 
   left: 50%;
   position: absolute;
   bottom: 3em;
-  font-weight: 800;
 }
 
 .AanUitKnop{
   position: absolute;
   right:1em;
   bottom: 1em;
+
   padding: .25em;
+
   background-color: var(--rood-blok);
+
   border-style: none;
   border-radius: 2em;
 }
@@ -231,10 +248,14 @@ article p{
   position: absolute;
   top:1em;
   right: 2.5em;
+
   border-radius: .2em;
+
   height: 20em;
   width: 25em;
+
   background-color:var(--scherm-1992);
+
   box-shadow:
     inset 0 -.1em .1em var(--tv-scherm-shadow),
     inset 0 .1em .1em var(--tv-scherm-shadow);
@@ -245,15 +266,17 @@ article p{
 
 
 /**************/
-/* DE TV 2000> */
+/* DE TV 2000>*/
 /**************/
-
 .tv-2000 {
   position: relative;
   width:45em;
   height:25em;
+
   background-color:var(--tv-blokje);
+
   border-radius: .5em;
+
   box-shadow:
     inset .15em .15em .15em var(--inset-shadow),
     inset -.15em -.15em .2em var(--inset-shadow),
@@ -262,19 +285,24 @@ article p{
 
 .tv-2000 p{
   font-size: .6em;
+
   color: var(--wit-p);
+
   transform: translateX(-50%); 
   left: 50%;
-  position: absolute;
   bottom: 0.5em;
+  position: absolute;
 }
 
 .AanUitKnop{
   position: absolute;
   right:1em;
   bottom: 1em;
+
   padding: .25em;
+
   background-color: var(--rood-blok);
+
   border-style: none;
   border-radius: 2em;
 }
@@ -283,10 +311,14 @@ article p{
   position: absolute;
   top:2.4em;
   right: 3em;
+
   border-radius: .2em;
+
   height: 20em;
   width: 39em;
+
   background-color:var(--tv-scherm);
+
   box-shadow:
     inset 0 -.1em .1em var(--tv-scherm-shadow),
     inset 0 .1em .1em var(--tv-scherm-shadow);
@@ -299,8 +331,11 @@ article p{
   position: relative;
   width:22em;
   height:22em;
+
   background-color:var(--tv-blokje);
+
   border-radius: .5em;
+
   box-shadow:
     inset .15em .15em .15em var(--inset-shadow),
     inset -.15em -.15em .2em var(--inset-shadow),
@@ -311,12 +346,16 @@ article p{
   position: absolute;
   top:1em;
   right: 1em;
+  
+  border: 1em solid var(--border-black); 
   border-radius: .2em;
   border-radius: .5em;
+
   height: 20em;
   width: 20em;
-  border: 1em solid var(--border-black); 
+
   background-color:var(--tv-scherm);
+
   box-shadow:
     inset 0 -.1em .1em var(--tv-scherm-shadow),
     inset 0 .1em .1em var(--tv-scherm-shadow);
@@ -333,12 +372,17 @@ article p{
   position: absolute;
   top:2.4em;
   right: 3em;
+
   border-radius: .2em;
+
   height: 20em;
-  border-style: outset;
-  border: 1em solid var(--border-black); 
   width: 39em;
+
+  border-style: outset;
+  border: 1em solid var(--border-black);
+
   background-color:var(--tv-scherm);
+
   box-shadow:
     inset 0 -.1em .1em var(--tv-scherm-shadow),
     inset 0 .1em .1em var(--tv-scherm-shadow);
@@ -354,8 +398,11 @@ article p{
   position: relative;
   width:45em;
   height:25em;
+
   background-color:var(--tv-blokje);
+
   border-radius: .5em;
+
   box-shadow:
     inset .15em .15em .15em var(--inset-shadow),
     inset -.15em -.15em .2em var(--inset-shadow),
@@ -364,8 +411,11 @@ article p{
 
 .tv-2010 p{
   font-size: .6em;
+
   color: var(--wit-p);
-  transform: translateX(-50%); 
+
+  transform: translateX(-50%);
+
   left: 50%;
   position: absolute;
   bottom: 0;
@@ -385,10 +435,14 @@ article p{
   position: absolute;
   top:1em;
   right: 1.5em;
+
   border-radius: .2em;
+
   height: 22em;
   width: 42em;
+
   background-color:var(--tv-scherm);
+
   box-shadow:
     inset 0 -.1em .1em var(--tv-scherm-shadow),
     inset 0 .1em .1em var(--tv-scherm-shadow);
@@ -402,10 +456,14 @@ article p{
 /**************/
 .tv-2017 {
   position: relative;
+
   width:45em;
   height:25em;
+
   background-color: var(--tv-blokje);
+
   border-radius: .5em;
+
   box-shadow:
     inset .15em .15em .15em var(--inset-shadow),
     inset -.15em -.15em .2em var(--inset-shadow),
@@ -413,23 +471,31 @@ article p{
 }
 
 .merk-naam-blokje{
-  background-color:var(--tv-blokje) ;
+  background-color:var(--tv-blokje);
+
   position: absolute;
-  height: 2em;
-  width: 4em;
   top: 23.7em;
   transform: translateX(-50%); 
+
+  height: 2em;
+  width: 4em;
+
   left: 50%;
-  border-radius: 10% 10% 52% 48% / 0% 0% 20% 20% ;
+
+  border-radius: 10% 10% 52% 48% / 0% 0% 20% 20%;
+
   box-shadow:
     .1em .1em 1em var(--tv-shadows);
 }
 
 .tv-2017 p{
   font-size: .6em;
+
   color: var(--tv-merk);
+
   transform: translateX(-50%); 
   left: 50%;
+
   z-index: 1;
 
   position: absolute;
@@ -440,11 +506,16 @@ article p{
   position: absolute;
   top:0.7em;
   right: 1em;
+
   border-radius: .2em;
+
   height: 23.4em;
   width: 43em;
+
   z-index: 1;
+
   background-color: var(--tv-scherm);
+
   box-shadow:
     inset 0 -.1em .1em var(--tv-scherm-shadow),
     inset 0 .1em .1em var(--tv-scherm-shadow);
@@ -456,10 +527,14 @@ article p{
 /**************/
 .mobiel {
   position: relative;
+
   width:11em;
   height:18em;
+
   background-color:rgb(30 30 30);
+
   border-radius: 1em;
+
   box-shadow:
     inset .15em .15em .15em rgb(100 100 100),
     inset -.15em -.15em .2em rgb(100 100 100),
@@ -471,10 +546,14 @@ article p{
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-  border-radius: 0.5em;
+
   height: 17em;
   width: 10em;
+
+  border-radius: 0.5em;
+
   background-color:rgb(70 70 70);
+
   box-shadow:
     inset 0 -.1em .1em rgb(150 150 150),
     inset 0 .1em .1em rgb(150 150 150);
@@ -520,6 +599,7 @@ ol li div {
 
 ol li > img:hover + div {
   animation-name:coin;
+  z-index: 1000;
   animation-duration: 1s;
   animation-iteration-count:infinite;
   opacity:1;
@@ -549,18 +629,22 @@ ol li > img:hover + div {
 nav{
   display: flex;
   justify-content: space-evenly;
+
   background-color:var(--nav-kleur);  
+  
   position: fixed;
   left: 50%;
-  transform: translateX(-50%);
   bottom: 15%;
   padding: .5em;
   align-items: center;
+  transform: translateX(-50%);
+
   border-radius: 10em;
 }
 
 nav p {
-  font-family:'pretendoregular';
+  font-family:'pixes-regular';
+  font-size: 1.3em;
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -593,14 +677,17 @@ nav button img:focus{
 /* Rood Informatie Blok */
 /***********************/
 .information{
-  top: 0;
-  background-color:var(--rood-blok);  
+  background-color:var(--rood-blok); 
+
   position: absolute;
+  top: 0;
   width: 35vw;
   height: 100%;
+
   z-index: 100;
   transform: translateX(calc(-100% + 4em));
   transition: 0.3s;
+  
   box-shadow: .1em .1em .7em .3em var(--redBlock-shadow);
   padding: 4em;
 }
@@ -611,28 +698,33 @@ nav button img:focus{
 
 .redBlock{
   background-color:var(--rood-blok);
+
   position: absolute;
   top: 50%;
   transform: translateY(-50%); 
   left: 100%;
   width: 4vw;
   height: 30%;
-  border-radius: 0 1em 1em 0 ;
+
+  border-radius: 0 1em 1em 0;
+
   display: grid;
   place-items: center;
   box-shadow: .5em 0em 0.5em .1em var(--redBlock-shadow);
-
 }
 
 .aButton{
   font-family: sans-serif;
   font-weight: 400;
   font-size: 1em;
+
   border: none;
   border-radius: 50%;
+
   margin-right: .4em;
   width: 3em;
   aspect-ratio: 1/1;
+
   box-shadow: inset 0.1em 0.1em 0.5em var(--a-button-hover),
   0.1em 0.1em 0.5em var(--shadow-1);
 }
@@ -644,7 +736,9 @@ nav button img:focus{
 
 .aButton:focus{
   outline: none;
+
   border: none;
+
   box-shadow: 0.1em 0.1em 0.5em var(--a-button-hover),
   inset 0.3em 0.3em 0.6em var(--a-button-hover-inset);
 }
@@ -656,22 +750,24 @@ ol li section{
 
 ol li section p {
   font-family: sans-serif;
-  font-size: 1.3em;
-  color: var(--wit-p);
+  font-size: 1em;
   font-weight: 300;
   text-align: center;
+
+  color: var(--wit-p);
 }
 
 ol li section.information > img {
   padding-top: 5em;
   width: 5em;
+
   animation: blooper 5s infinite;
   animation-duration: 2s;
   transition: 0.3s;
 }
 
 ol li section.information > img:hover {
-filter: drop-shadow(.5em .5em 1em var(--shadow-1));
+filter: drop-shadow(.5em .5em 1em var(--shadow-1)); /* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow*/
 }
 
 @keyframes blooper {
@@ -752,31 +848,37 @@ aside.gestart {
 /* Ink Splash */
 /***************/
 
-/* .ink-Splash{
-  background: url("../../Interface-InteractieVID2/images/inkSplash.png") no-repeat center center fixed;
-  z-index: 10000;
-  opacity: 1;
-  animation-name: ink-splash;
-}
 
 body > img {
+position: fixed;
 width: 100vw;
-animation-name: ink-splash;
-transition: 2.5s;
+height: 100vh;
+z-index: 10000;
+top: 0;
+left: 0;
+
+pointer-events: none;
+
+transition: .2s;
+transform: scale(0);
 }
 
-body > img:hover {
-cursor: pointer;
-  }
+body > img.ink-Splash{
+  animation-name: ink-splash;
+  animation-duration: 3.2s;
+}
+
 
 @keyframes ink-splash {
-0% {
-    opacity: 0;
+  0% {
+    transform: scale(0);
+  }
+  6.25%, 25%{
+    transform: scale(1);
+    opacity:1;
+  }
+  100% {
+    transform: scale(1);
+    opacity:0;
+  }
 }
-50%{
-  opacity: 1;
-}
-100% {
-    opacity: 0;
-}
-} */
