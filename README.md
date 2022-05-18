@@ -61,7 +61,7 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
   "Wil je de tekst meteen hebben uitgeklapt? 
   Of ga je hier gebruik maken progressive disclosure?."
 
-  #### oplossing:
+  #### **oplossing:**
   Ik had hier inderdaad nog niet over nagedacht. Ik heb daarom het idee verzonnen om om de informatie te laten verschijnen doormiddel van de A knop in te drukken en je kan B knop in drukken om het informatie blok te sluiten. 
 
 
@@ -89,6 +89,9 @@ Ik heb gekozen voor rood omdat ik wel de basis begrijp van html css en op deze m
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+    <img src="readme-images/feedback2.jpg" width="200px" alt="Feedback">
+  <img src="readme-images/feedback2.1.png" width="200px" alt="Feedback">
+
   
   ### Bevinding 1:
   Ik vind persoonlijk dat mijn website nog niet responsive genoeg is bij het tijdlijn scherm. 
@@ -192,8 +195,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 11. Switch afb: https://www.schiphol.nl/nl/op-schiphol/shoppen/producten/nintendo-switch-console/17022203
 12. mobiel afb: https://www.t-mobile.com/cell-phone/apple-iphone-12
 13. coin afb: https://www.mariowiki.com/Gallery:Coin
+14. ink splash afb: https://nl.pinterest.com/pin/185140234670948225/
 
-
-13. alle informatie over de games: https://mario.fandom.com/wiki/MarioWiki & https://en.wikipedia.org/wiki/Mario_Kart
+14. alle informatie over de games: https://mario.fandom.com/wiki/MarioWiki & https://en.wikipedia.org/wiki/Mario_Kart
 
 </details>
